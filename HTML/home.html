@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="abrirDialogo('dialogo1')">Abrir diálogo</button>
+    <dialog id="dialogo1">
+    <p>Hola! Este es nuestro primer diálogo. Si te gusta, no lo cierres...</p>
+    <button type="button" onclick="cerrarDialogo('dialogo1')">Cerrar</button>
+    </dialog>
+    <button type="button" onclick="abrirDialogo('dialogo2', true)">Abrir diálogo</button>
+    <dialog id="dialogo2" class="dialogo-ejemplo">
+    <p>Wow! esto está mejor, ¿no es así?</p>
+    <button type="button" onclick="cerrarDialogo('dialogo2')">Cerrar</button>
+    </dialog>
+</body>
+</html>
