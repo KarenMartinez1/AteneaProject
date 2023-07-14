@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b4940dadd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\CSS\normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <script src="../JavaScript/redirection.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <button type="button" onclick="abrirDialogo('dialogo1')">Abrir diálogo</button>
-    <dialog id="dialogo1">
-    <p>Hola! Este es nuestro primer diálogo. Si te gusta, no lo cierres...</p>
-    <button type="button" onclick="cerrarDialogo('dialogo1')">Cerrar</button>
-    </dialog>
-    <button type="button" onclick="abrirDialogo('dialogo2', true)">Abrir diálogo</button>
-    <dialog id="dialogo2" class="dialogo-ejemplo">
-    <p>Wow! esto está mejor, ¿no es así?</p>
-    <button type="button" onclick="cerrarDialogo('dialogo2')">Cerrar</button>
-    </dialog>
+<body class="primary-background">
+    <nav class="navbar">
+        <div class="content-logo">
+            <a href="home.html">
+            <img  class="logo" src="..\Images\logo.png">
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+            <a href="menu.html"> Menu </a>  
+            </li>
+            <li>
+            <a href="orders.html"> Orders </a>  
+            </li>
+            <li>
+            <a href="contact.html"> Contact </a>  
+            </li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook " style="color: #0c0c0e;"></i>
+            </a> 
+            <a href="https://www.instagram.com/" target="_blank"> 
+            <i class="fa-brands fa-instagram" style="color: #0f0f0f;"></i>
+            </a> 
+            <a href="https://www.whatsapp.com/" target="_blank"> 
+            <i class="fa-brands fa-whatsapp" style="color: #0d0d0d;"></i>
+            </a> 
+        </div>
+    </nav>
+   <h1 class="title">Coffee Shop</h1>
+   <p class="description">Enjoy a high quality natural coffee with the perfect combination of flavors for all kinds of occasion and with the best people</p>
+   <div class="content-button">
+   <button class="button-order" onclick="redirection()">Order now</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b4940dadd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\CSS\normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="../JavaScript/updateTitle.js"></script>
+    <script src="../JavaScript/quantityProduct.js"></script>
+</head>
+<body>
+   <nav>
+      <div class="content-logo">
+          <a href="home.html">
+          <img  class="logo" src="..\Images\logo.png">
+          </a>
+      </div>
+      <ul class="menu">
+          <li>
+          <a href="menu.html"> Menu </a>  
+          </li>
+          <li>
+          <a href="orders.html"> Orders </a>  
+          </li>
+          <li>
+          <a href="contact.html"> Contact </a>  
+          </li>
+      </ul>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook " style="color: #0c0c0e;"></i>
+          </a> 
+          <a href="https://www.instagram.com/" target="_blank"> 
+          <i class="fa-brands fa-instagram" style="color: #0f0f0f;"></i>
+          </a> 
+          <a href="https://www.whatsapp.com/" target="_blank"> 
+          <i class="fa-brands fa-whatsapp" style="color: #0d0d0d;"></i>
+          </a> 
+      </div>
+  </nav>
+   
+   <div class="select-product">
+      <div class="form-box">
+      <form action="">
+         <input class="search-bar" type="search" required placeholder="Search here your product ">
+         <i class="fa fa-search"></i>
+      </form>
+      </div>
+      <div>
+      <select class="products" id="products" onchange="updateTitle()" >
+       <option>
+        Cold drinks
+       </option>
+       <option>
+        Hot drinks
+       </option>
+       <option>
+        Accompaniments
+       </option>
+      </select>
+      </div>
+   </div>
+   <h1 class="product-title" id="product-title">Cold drinks</h1>
+
+   <div class="card">
+    <div class="product-image">
+      <img src="..\Images\product.PNG" alt="Producto">
+    </div>
+    <div class="product-details">
+      <h2 class="card-title">Caramel Frappuccino</h2>
+      <p class="product-description">Caramel-based drink coffee and milk with whipped cream made from coffee white mocha and caramel </p>
+      <div class="actions">
+        <button class="add-button" onclick="incrementUnit()">
+            <i class="fas fa-plus-circle"></i>
+        </button>
+        <span class="unit-count" id="unit-count">0</span>
+        <button class="remove-button" onclick="decrementUnit()">
+            <i id="icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
